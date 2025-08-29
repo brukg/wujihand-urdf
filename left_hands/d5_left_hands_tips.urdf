@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="D5_left_hands_tips">
+  name="d5_left_hands_tips">
   <link
     name="base_link">
     <inertial>
@@ -95,12 +95,12 @@
     <child
       link="CMC_joint" />
     <axis
-      xyz="0 0.090031 -0.99594" />
+      xyz="0 -0.090031 0.99594" />
     <limit
-      lower="-1.83"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.0448"
+      upper="1.6508"
+      effort="0.6"
+      velocity="8.58701992" />
   </joint>
   <link
     name="CMC_2rd">
@@ -155,10 +155,10 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.1659"
+      upper="0.9339"
+      effort="0.6"
+      velocity="11.10029404" />
   </joint>
   <link
     name="MCP_thumb">
@@ -213,10 +213,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="12.86307659" />
   </joint>
   <link
     name="IP_thumb">
@@ -271,10 +271,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="13.57866158" />
   </joint>
   <link
     name="fingertip_thumb">
@@ -382,10 +382,10 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="-1.83"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-1.63595"
+      upper="0.32695"
+      effort="1.0"
+      velocity="8.203047484" />
   </joint>
   <link
     name="PIPMCP_2rd_index">
@@ -440,10 +440,10 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-0.52"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.495"
+      upper="0.495"
+      effort="0.2"
+      velocity="8.115781022" />
   </joint>
   <link
     name="DIP_index">
@@ -498,10 +498,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="12.86307659" />
   </joint>
   <link
     name="tipmount_index">
@@ -556,10 +556,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="13.57866158" />
   </joint>
   <link
     name="fingertip_index">
@@ -667,10 +667,10 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="-1.83"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-1.63595"
+      upper="0.32695"
+      effort="1.0"
+      velocity="8.203047484" />
   </joint>
   <link
     name="PIPMCP_2rd_middle">
@@ -725,10 +725,10 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-0.52"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.495"
+      upper="0.495"
+      effort="0.2"
+      velocity="8.115781022" />
   </joint>
   <link
     name="DIP_middle">
@@ -783,10 +783,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="12.86307659" />
   </joint>
   <link
     name="tipmount_middle">
@@ -841,10 +841,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="13.57866158" />
   </joint>
   <link
     name="fingertip_middle">
@@ -952,10 +952,10 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="-1.83"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-1.63595"
+      upper="0.32695"
+      effort="1.0"
+      velocity="8.203047484" />
   </joint>
   <link
     name="PIPMCP_2rd_ring">
@@ -1010,10 +1010,10 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-0.52"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.495"
+      upper="0.495"
+      effort="0.2"
+      velocity="8.115781022" />
   </joint>
   <link
     name="DIP_ring">
@@ -1068,10 +1068,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="12.86307659" />
   </joint>
   <link
     name="tipmount_ring">
@@ -1126,10 +1126,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="13.57866158" />
   </joint>
   <link
     name="fingertip_ring">
@@ -1237,10 +1237,10 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="-1.83"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-1.63595"
+      upper="0.32695"
+      effort="1.0"
+      velocity="8.203047484" />
   </joint>
   <link
     name="PIPMCP_2rd_pinky">
@@ -1295,10 +1295,10 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-0.52"
-      upper="0.52"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.495"
+      upper="0.495"
+      effort="0.2"
+      velocity="8.115781022" />
   </joint>
   <link
     name="DIP_pinky">
@@ -1353,10 +1353,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.5222"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="12.86307659" />
   </joint>
   <link
     name="tipmount_pinky">
@@ -1411,10 +1411,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.52"
-      upper="1.83"
-      effort="10000"
-      velocity="10000" />
+      lower="-0.4932"
+      upper="1.6272"
+      effort="0.3"
+      velocity="13.57866158" />
   </joint>
   <link
     name="fingertip_pinky">
