@@ -380,10 +380,10 @@
     <child
       link="MCP_joint_index" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="-1.63595"
-      upper="0.32695"
+      lower="-0.32695"
+      upper="1.63595"
       effort="1.0"
       velocity="8.203047484" />
   </joint>
@@ -665,10 +665,10 @@
     <child
       link="MCP_joint_middle" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="-1.63595"
-      upper="0.32695"
+      lower="-0.32695"
+      upper="1.63595"
       effort="1.0"
       velocity="8.203047484" />
   </joint>
@@ -950,10 +950,10 @@
     <child
       link="MCP_joint_ring" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="-1.63595"
-      upper="0.32695"
+      lower="-0.32695"
+      upper="1.63595"
       effort="1.0"
       velocity="8.203047484" />
   </joint>
@@ -1235,10 +1235,10 @@
     <child
       link="MCP_joint_pinky" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="-1.63595"
-      upper="0.32695"
+      lower="-0.32695"
+      upper="1.63595"
       effort="1.0"
       velocity="8.203047484" />
   </joint>
