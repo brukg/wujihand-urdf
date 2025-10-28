@@ -42,7 +42,7 @@
     </collision>
   </link>
   <link
-    name="finger1_link1">
+    name="thumb_metacarpal_link">
     <inertial>
       <origin
         xyz="-0.00158326296943185 0.00213593307440989 0.00777132593574714"
@@ -63,7 +63,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_metacarpal_link.STL" />
       </geometry>
       <material
         name="">
@@ -77,12 +77,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_metacarpal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger1_joint1"
+    name="thumb_mcp_pitch_joint"
     type="revolute">
     <origin
       xyz="0.0085244 -0.020575 0.028712"
@@ -90,7 +90,7 @@
     <parent
       link="palm_link" />
     <child
-      link="finger1_link1" />
+      link="thumb_metacarpal_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -100,7 +100,7 @@
       velocity="8.58701992" />
   </joint>
   <link
-    name="finger1_link2">
+    name="thumb_proximal_link">
     <inertial>
       <origin
         xyz="2.99522995513279E-05 -0.00116812486179632 0.0149182232520299"
@@ -121,7 +121,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -135,20 +135,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger1_joint2"
+    name="thumb_mcp_roll_joint"
     type="revolute">
     <origin
       xyz="-0.0047549 0.0060191 0.014132"
       rpy="-0.27968 -0.55633 -0.081982" />
     <parent
-      link="finger1_link1" />
+      link="thumb_metacarpal_link" />
     <child
-      link="finger1_link2" />
+      link="thumb_proximal_link" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -158,7 +158,7 @@
       velocity="11.10029404" />
   </joint>
   <link
-    name="finger1_link3">
+    name="thumb_middle_link">
     <inertial>
       <origin
         xyz="-0.0011164528117824 -0.000193536601537519 0.0127950742476409"
@@ -179,7 +179,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_middle_link.STL" />
       </geometry>
       <material
         name="">
@@ -193,20 +193,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_middle_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger1_joint3"
+    name="thumb_pip_joint"
     type="revolute">
     <origin
       xyz="0.0009915 -0.00026671 0.033166"
       rpy="-0.049049 0.017311 0.33774" />
     <parent
-      link="finger1_link2" />
+      link="thumb_proximal_link" />
     <child
-      link="finger1_link3" />
+      link="thumb_middle_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -216,7 +216,7 @@
       velocity="12.86307659" />
   </joint>
   <link
-    name="finger1_link4">
+    name="thumb_distal_link">
     <inertial>
       <origin
         xyz="-0.0011924347648161 -0.000426848762611627 0.00874664264011477"
@@ -237,7 +237,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -251,20 +251,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_distal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger1_joint4"
+    name="thumb_dip_joint"
     type="revolute">
     <origin
       xyz="0 4.0225E-05 0.028987"
       rpy="0 0 0" />
     <parent
-      link="finger1_link3" />
+      link="thumb_middle_link" />
     <child
-      link="finger1_link4" />
+      link="thumb_distal_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -274,7 +274,7 @@
       velocity="13.57866158" />
   </joint>
   <link
-    name="finger1_tip_link">
+    name="thumb_tip_link">
     <inertial>
       <origin
         xyz="-0.000181790844011175 -8.01226346783257E-06 -0.00417789759267298"
@@ -295,7 +295,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -309,20 +309,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger1_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/thumb_tip_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger1_tip_fixed"
+    name="thumb_tip_fixed"
     type="fixed">
     <origin
       xyz="-0.001058 -0.00044022 0.029313"
       rpy="0 0 0" />
     <parent
-      link="finger1_link4" />
+      link="thumb_distal_link" />
     <child
-      link="finger1_tip_link" />
+      link="thumb_tip_link" />
     <axis
       xyz="0 0 0" />
     <limit
@@ -332,7 +332,7 @@
       velocity="10" />
   </joint>
   <link
-    name="finger2_link1">
+    name="index_metacarpal_link">
     <inertial>
       <origin
         xyz="-0.00132913876729344 1.07998111356644E-08 0.000319987804784969"
@@ -353,7 +353,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_metacarpal_link.STL" />
       </geometry>
       <material
         name="">
@@ -367,12 +367,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_metacarpal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger2_joint1"
+    name="index_mcp_pitch_joint"
     type="revolute">
     <origin
       xyz="-0.0058701 -0.029434 0.091917"
@@ -380,7 +380,7 @@
     <parent
       link="palm_link" />
     <child
-      link="finger2_link1" />
+      link="index_metacarpal_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -390,7 +390,7 @@
       velocity="8.203047484" />
   </joint>
   <link
-    name="finger2_link2">
+    name="index_proximal_link">
     <inertial>
       <origin
         xyz="-0.00607478065701528 -4.93319372601997E-07 0.0174058499433649"
@@ -411,7 +411,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -425,20 +425,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger2_joint2"
+    name="index_mcp_roll_joint"
     type="revolute">
     <origin
       xyz="0.0022 0 0.004"
       rpy="-0.00043322 1.0969E-05 0" />
     <parent
-      link="finger2_link1" />
+      link="index_metacarpal_link" />
     <child
-      link="finger2_link2" />
+      link="index_proximal_link" />
     <axis
       xyz="-1 -0 -0" />
     <limit
@@ -448,7 +448,7 @@
       velocity="8.115781022" />
   </joint>
   <link
-    name="finger2_link3">
+    name="index_middle_link">
     <inertial>
       <origin
         xyz="-0.00112281429455101 4.42885564347698E-06 0.0155095500899497"
@@ -469,7 +469,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_middle_link.STL" />
       </geometry>
       <material
         name="">
@@ -483,20 +483,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_middle_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger2_joint3"
+    name="index_pip_joint"
     type="revolute">
     <origin
       xyz="-0.0046 0 0.036618"
       rpy="0 0 -0.00026861" />
     <parent
-      link="finger2_link2" />
+      link="index_proximal_link" />
     <child
-      link="finger2_link3" />
+      link="index_middle_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -506,7 +506,7 @@
       velocity="12.86307659" />
   </joint>
   <link
-    name="finger2_link4">
+    name="index_distal_link">
     <inertial>
       <origin
         xyz="-0.000894373440667368 1.7064179684341E-05 0.0053517596526321"
@@ -527,7 +527,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -541,20 +541,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_distal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger2_joint4"
+    name="index_dip_joint"
     type="revolute">
     <origin
       xyz="0 0 0.029"
       rpy="0 0 0" />
     <parent
-      link="finger2_link3" />
+      link="index_middle_link" />
     <child
-      link="finger2_link4" />
+      link="index_distal_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -564,7 +564,7 @@
       velocity="13.57866158" />
   </joint>
   <link
-    name="finger2_tip_link">
+    name="index_tip_link">
     <inertial>
       <origin
         xyz="-0.000203319997422801 1.48461818001711E-06 -0.00861106767971259"
@@ -585,7 +585,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -599,25 +599,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger2_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/index_tip_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger2_tip_fixed"
+    name="index_tip_fixed"
     type="fixed">
     <origin
       xyz="-0.0010404 0 0.0267"
       rpy="0 0 0" />
     <parent
-      link="finger2_link4" />
+      link="index_distal_link" />
     <child
-      link="finger2_tip_link" />
+      link="index_tip_link" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="finger3_link1">
+    name="middle_metacarpal_link">
     <inertial>
       <origin
         xyz="-0.00132913696813167 1.11602473183009E-09 0.000319936646371297"
@@ -638,7 +638,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_metacarpal_link.STL" />
       </geometry>
       <material
         name="">
@@ -652,12 +652,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_metacarpal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger3_joint1"
+    name="middle_mcp_pitch_joint"
     type="revolute">
     <origin
       xyz="-0.01046 -0.0074615 0.089544"
@@ -665,7 +665,7 @@
     <parent
       link="palm_link" />
     <child
-      link="finger3_link1" />
+      link="middle_metacarpal_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -675,7 +675,7 @@
       velocity="8.203047484" />
   </joint>
   <link
-    name="finger3_link2">
+    name="middle_proximal_link">
     <inertial>
       <origin
         xyz="-0.00607477235967843 -4.92548204314783E-07 0.0174058563898581"
@@ -696,7 +696,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -710,20 +710,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger3_joint2"
+    name="middle_mcp_roll_joint"
     type="revolute">
     <origin
       xyz="0.0022 0 0.004"
       rpy="-0.00043323 0 0" />
     <parent
-      link="finger3_link1" />
+      link="middle_metacarpal_link" />
     <child
-      link="finger3_link2" />
+      link="middle_proximal_link" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -733,7 +733,7 @@
       velocity="8.115781022" />
   </joint>
   <link
-    name="finger3_link3">
+    name="middle_middle_link">
     <inertial>
       <origin
         xyz="-0.00112282877409504 4.3967738578175E-06 0.0155095423926734"
@@ -754,7 +754,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_middle_link.STL" />
       </geometry>
       <material
         name="">
@@ -768,20 +768,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_middle_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger3_joint3"
+    name="middle_pip_joint"
     type="revolute">
     <origin
       xyz="-0.0046 0 0.036618"
       rpy="0 0 -0.00026862" />
     <parent
-      link="finger3_link2" />
+      link="middle_proximal_link" />
     <child
-      link="finger3_link3" />
+      link="middle_middle_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -791,7 +791,7 @@
       velocity="12.86307659" />
   </joint>
   <link
-    name="finger3_link4">
+    name="middle_distal_link">
     <inertial>
       <origin
         xyz="-0.000894355967897602 1.70486239230308E-05 0.00535176750388458"
@@ -812,7 +812,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -826,20 +826,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_distal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger3_joint4"
+    name="middle_dip_joint"
     type="revolute">
     <origin
       xyz="0 0 0.029"
       rpy="0 0 0" />
     <parent
-      link="finger3_link3" />
+      link="middle_middle_link" />
     <child
-      link="finger3_link4" />
+      link="middle_distal_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -849,7 +849,7 @@
       velocity="13.57866158" />
   </joint>
   <link
-    name="finger3_tip_link">
+    name="middle_tip_link">
     <inertial>
       <origin
         xyz="-0.000203207212768761 1.53102336469726E-06 -0.00861060208734837"
@@ -870,7 +870,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -884,25 +884,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger3_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/middle_tip_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger3_tip_fixed"
+    name="middle_tip_fixed"
     type="fixed">
     <origin
       xyz="-0.0010404 0 0.0267"
       rpy="0 0 0" />
     <parent
-      link="finger3_link4" />
+      link="middle_distal_link" />
     <child
-      link="finger3_tip_link" />
+      link="middle_tip_link" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="finger4_link1">
+    name="ring_metacarpal_link">
     <inertial>
       <origin
         xyz="-0.00132895375767908 1.51762913867814E-09 0.000320713696782327"
@@ -923,7 +923,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_metacarpal_link.STL" />
       </geometry>
       <material
         name="">
@@ -937,12 +937,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_metacarpal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger4_joint1"
+    name="ring_mcp_pitch_joint"
     type="revolute">
     <origin
       xyz="-0.0076649 0.013712 0.084429"
@@ -950,7 +950,7 @@
     <parent
       link="palm_link" />
     <child
-      link="finger4_link1" />
+      link="ring_metacarpal_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -960,7 +960,7 @@
       velocity="8.203047484" />
   </joint>
   <link
-    name="finger4_link2">
+    name="ring_proximal_link">
     <inertial>
       <origin
         xyz="-0.00607477274280132 -4.94696776296571E-07 0.0174058568340444"
@@ -981,7 +981,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -995,20 +995,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger4_joint2"
+    name="ring_mcp_roll_joint"
     type="revolute">
     <origin
       xyz="0.0022024 0 0.0039987"
       rpy="-0.00043323 0.00060486 0" />
     <parent
-      link="finger4_link1" />
+      link="ring_metacarpal_link" />
     <child
-      link="finger4_link2" />
+      link="ring_proximal_link" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -1018,7 +1018,7 @@
       velocity="8.115781022" />
   </joint>
   <link
-    name="finger4_link3">
+    name="ring_middle_link">
     <inertial>
       <origin
         xyz="-0.0011228321819906 4.39700635864425E-06 0.0155095452031211"
@@ -1039,7 +1039,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_middle_link.STL" />
       </geometry>
       <material
         name="">
@@ -1053,20 +1053,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_middle_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger4_joint3"
+    name="ring_pip_joint"
     type="revolute">
     <origin
       xyz="-0.0046 0 0.036618"
       rpy="0 0 -0.00026862" />
     <parent
-      link="finger4_link2" />
+      link="ring_proximal_link" />
     <child
-      link="finger4_link3" />
+      link="ring_middle_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -1076,7 +1076,7 @@
       velocity="12.86307659" />
   </joint>
   <link
-    name="finger4_link4">
+    name="ring_distal_link">
     <inertial>
       <origin
         xyz="-0.000894359410124938 1.70403161934805E-05 0.00535177062111186"
@@ -1097,7 +1097,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -1111,20 +1111,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_distal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger4_joint4"
+    name="ring_dip_joint"
     type="revolute">
     <origin
       xyz="0 0 0.029"
       rpy="0 0 0" />
     <parent
-      link="finger4_link3" />
+      link="ring_middle_link" />
     <child
-      link="finger4_link4" />
+      link="ring_distal_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -1134,7 +1134,7 @@
       velocity="13.57866158" />
   </joint>
   <link
-    name="finger4_tip_link">
+    name="ring_tip_link">
     <inertial>
       <origin
         xyz="-0.000197997018420683 1.49757476195292E-06 -0.00861110586236161"
@@ -1155,7 +1155,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -1169,25 +1169,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger4_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/ring_tip_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger4_tip_fixed"
+    name="ring_tip_fixed"
     type="fixed">
     <origin
       xyz="-0.0010993 0 0.026698"
       rpy="0 0 0" />
     <parent
-      link="finger4_link4" />
+      link="ring_distal_link" />
     <child
-      link="finger4_tip_link" />
+      link="ring_tip_link" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="finger5_link1">
+    name="pinky_metacarpal_link">
     <inertial>
       <origin
         xyz="-0.0013289059094453 -3.48186606907719E-08 0.000320876706930359"
@@ -1208,7 +1208,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_metacarpal_link.STL" />
       </geometry>
       <material
         name="">
@@ -1222,12 +1222,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_link1.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_metacarpal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger5_joint1"
+    name="pinky_mcp_pitch_joint"
     type="revolute">
     <origin
       xyz="-0.0022687 0.034001 0.074281"
@@ -1235,7 +1235,7 @@
     <parent
       link="palm_link" />
     <child
-      link="finger5_link1" />
+      link="pinky_metacarpal_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -1245,7 +1245,7 @@
       velocity="8.203047484" />
   </joint>
   <link
-    name="finger5_link2">
+    name="pinky_proximal_link">
     <inertial>
       <origin
         xyz="-0.00607477630781191 -4.98515591005472E-07 0.0174058545892246"
@@ -1266,7 +1266,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_proximal_link.STL" />
       </geometry>
       <material
         name="">
@@ -1280,20 +1280,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_link2.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger5_joint2"
+    name="pinky_mcp_roll_joint"
     type="revolute">
     <origin
       xyz="0.002203 0 0.0039983"
       rpy="-0.00043323 0.00075655 0" />
     <parent
-      link="finger5_link1" />
+      link="pinky_metacarpal_link" />
     <child
-      link="finger5_link2" />
+      link="pinky_proximal_link" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -1303,7 +1303,7 @@
       velocity="8.115781022" />
   </joint>
   <link
-    name="finger5_link3">
+    name="pinky_middle_link">
     <inertial>
       <origin
         xyz="-0.00112283373761552 4.41305177315693E-06 0.015509541308375"
@@ -1324,7 +1324,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_middle_link.STL" />
       </geometry>
       <material
         name="">
@@ -1338,20 +1338,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_link3.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_middle_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger5_joint3"
+    name="pinky_pip_joint"
     type="revolute">
     <origin
       xyz="-0.0046 0 0.036618"
       rpy="0 0 -0.00026862" />
     <parent
-      link="finger5_link2" />
+      link="pinky_proximal_link" />
     <child
-      link="finger5_link3" />
+      link="pinky_middle_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -1361,7 +1361,7 @@
       velocity="12.86307659" />
   </joint>
   <link
-    name="finger5_link4">
+    name="pinky_distal_link">
     <inertial>
       <origin
         xyz="-0.000894371517294152 1.70401337270983E-05 0.00535176657060582"
@@ -1382,7 +1382,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_distal_link.STL" />
       </geometry>
       <material
         name="">
@@ -1396,20 +1396,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_link4.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_distal_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger5_joint4"
+    name="pinky_dip_joint"
     type="revolute">
     <origin
       xyz="0 0 0.029"
       rpy="0 0 0" />
     <parent
-      link="finger5_link3" />
+      link="pinky_middle_link" />
     <child
-      link="finger5_link4" />
+      link="pinky_distal_link" />
     <axis
       xyz="-0 1 -0" />
     <limit
@@ -1419,7 +1419,7 @@
       velocity="13.57866158" />
   </joint>
   <link
-    name="finger5_tip_link">
+    name="pinky_tip_link">
     <inertial>
       <origin
         xyz="-0.000196791258334415 1.49823333060045E-06 -0.00861112752555265"
@@ -1440,7 +1440,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -1454,20 +1454,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://wujihand-urdf/meshes/left/finger5_tip_link.STL" />
+          filename="package://wujihand-urdf/meshes/left/pinky_tip_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="finger5_tip_fixed"
+    name="pinky_tip_fixed"
     type="fixed">
     <origin
       xyz="-0.0011127 0 0.026697"
       rpy="0 0 0" />
     <parent
-      link="finger5_link4" />
+      link="pinky_distal_link" />
     <child
-      link="finger5_tip_link" />
+      link="pinky_tip_link" />
     <axis
       xyz="0 0 0" />
     <limit
